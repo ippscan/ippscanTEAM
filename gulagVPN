@@ -51,8 +51,8 @@
     "final": "dns-remote",
     "static_ips": {
       "sky.rethinkdns.com": [
-        "104.18.48.1	",
-        "185.207.92.152",
+        "172.67.204.84",
+        "104.21.69.44",
         "2606:4700:3032::6815:452c",
         "2606:4700:3031::ac43:cc54",
         "104.18.203.232",
@@ -103,8 +103,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇷 WARP - Iran",
-        "🇩🇪 WARP - Germany"
+        "???? WARP - Iran",
+        "???? WARP - Germany"
       ],
       "default": "auto"
     },
@@ -112,22 +112,22 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇷 WARP - Iran",
-        "🇩🇪 WARP - Germany"
+        "???? WARP - Iran",
+        "???? WARP - Germany"
       ],
       "url": "http://cp.cloudflare.com/",
       "interval": "10m0s"
     },
     {
       "type": "wireguard",
-      "tag": "🇮🇷 WARP - Iran",
+      "tag": "???? WARP - Iran",
       "local_address": [
         "172.16.0.2/32",
         "2606:4700:110:8c91:4063:21d0:7dd5:f218/128"
       ],
       "private_key": "AJ0si9MKGCtoC/NHwKc8G0MADbTPl/1M7KNWvM24W1g=",
-      "server": "188.114.98.122",
-      "server_port": 934,
+      "server": "162.159.195.128",
+      "server_port": 2506,
       "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
       "reserved": "AAAA",
       "mtu": 1280,
@@ -137,15 +137,15 @@
     },
     {
       "type": "wireguard",
-      "tag": "🇩🇪 WARP - Germany",
-      "detour": "🇮🇷 WARP - Iran",
+      "tag": "???? WARP - Germany",
+      "detour": "???? WARP - Iran",
       "local_address": [
         "172.16.0.2/32",
         "2606:4700:110:8c15:3f90:ad2d:8810:77f3/128"
       ],
-      "private_key": "iKXZlb1y3GtpI6shoSD3OMaC3RWmvO1kebNJRHeOm14=",
-      "server": "188.114.98.122",
-      "server_port": 934,
+      "private_key": "HKoQE36HtLF5197bKMEQxNCRg85tBk5mcLUj99nPoxTR=",
+      "server": "162.159.195.128",
+      "server_port": 2506,
       "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
       "reserved": "AAAA",
       "mtu": 1280,
