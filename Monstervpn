@@ -1,3 +1,3 @@
-warp://188.114.97.229:988/?ifp=1-5#warp-ir&&detour=warp://162.159.195.185:934/?ifp=1-5#warp-main
-warp://162.159.195.204:1843/?ifp=1-5#warp-ir&&detour=warp://162.159.195.136:1018/?ifp=1-5#warp-main
-warp://162.159.195.131:1843/?ifp=1-5#warp-ir&&detour=warp://162.159.195.35:2408/?ifp=1-5#warp-main
+warp://162.159.192.156:939/?ifp=1-5#warp-ir&&detour=warp://162.159.195.111:1180/?ifp=1-5#warp-main
+warp://162.159.195.22:939/?ifp=1-5#warp-ir&&detour=warp://162.159.195.153:1180/?ifp=1-5#warp-main
+warp://188.114.97.247:939/?ifp=1-5#warp-ir&&detour=warp://188.114.96.253:1180/?ifp=1-5#warp-main
