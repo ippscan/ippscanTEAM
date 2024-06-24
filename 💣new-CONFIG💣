@@ -11,9 +11,9 @@
         "172.16.0.2/32",
         "2606:4700:110:81ce:ac8:6185:22b4:2e93/128"
       ],
-      "private_key": "+LMgTD/P4KiK8soOh8jTzRlkuavYPFlqFPQ87iiqhVE=",
+      "private_key": "uLBTdzXp+H7QY87d6CQsDZH23Dclqm758GAn49tPQkY=",
       "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
-      "reserved": [ 88, 209, 11 ],
+      "reserved": [ 158, 228, 254 ],
 
       "mtu": 1280,
       "fake_packets": "5-10"
@@ -29,9 +29,9 @@
           "172.16.0.2/32",
           "2606:4700:110:8c70:3022:5217:1309:dc1f/128"
       ],
-      "private_key": "iGOixCqyADsEUyW64WLtl4YoWQNOBlL5FdTbAeOXbW4=",
+      "private_key": "4JXoR3zU/a6ulauOcrS2+d1YitN0+9hFQxCtf4Xgl04=",
       "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
-      "reserved": [ 174, 238, 35 ],  
+      "reserved": [ 178, 239, 88 ],  
 
       "mtu": 1120,
       "fake_packets": "5-10"
