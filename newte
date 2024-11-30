@@ -7,5 +7,6 @@
     "162.159.192.0/24"
   ],
   "endpoint": "188.114.96.222:7281",
-  "persistentKeepalive": 25
+  "persistentKeepalive": 25,
+  "singbox-parser": "v1"
 }
