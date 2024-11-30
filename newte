@@ -1,0 +1,71 @@
+{
+  "log": {
+    "level": "info",
+    "output": "warp-in-warp.log",
+    "timestamp": true
+  },
+  "dns": {
+    "servers": [
+      {
+        "tag": "warp1-dns",
+        "address": "https://1.1.1.1/dns-query"
+      },
+      {
+        "tag": "warp2-dns",
+        "address": "https://1.0.0.1/dns-query"
+      }
+    ],
+    "rules": [
+      {
+        "domain": "example.com",
+        "server": "warp1-dns"
+      }
+    ],
+    "final": "warp1-dns"
+  },
+  "inbounds": [
+    {
+      "type": "socks",
+      "tag": "warp-in",
+      "listen": "127.0.0.1",
+      "listen_port": 1080,
+      "sniff": true,
+      "sniff_override_destination": true
+    }
+  ],
+  "outbounds": [
+    {
+      "type": "proxy",
+      "tag": "warp1-out",
+      "server": "engage.cloudflareclient.com",
+      "port": 443,
+      "protocol": "wireguard",
+      "wireguard": {
+        "private_key": "yOlPsSoXfpOM092OYylyKFHap9JT617MP4+skPeE5XY=",
+        "peer_public_key": "6HwwdOb7ErDHTLDFQJl2OFCf4TkP8fLo8kZ7EkoozjE=",
+        "endpoint": "162.159.192.1:2408"
+      }
+    },
+    {
+      "type": "proxy",
+      "tag": "warp2-out",
+      "server": "engage.cloudflareclient.com",
+      "port": 443,
+      "protocol": "wireguard",
+      "wireguard": {
+        "private_key": "mF4vwBQXpAh+CtzIeTJS85J2LUmLwTTn6IEIgWpSomA=",
+        "peer_public_key": "6HwwdOb7ErDHTLDFQJl2OFCf4TkP8fLo8kZ7EkoozjE=",
+        "endpoint": "162.159.193.1:2408"
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "warp-in-warp",
+      "outbounds": [
+        "warp1-out",
+        "warp2-out"
+      ],
+      "default": "warp1-out"
+    }
+  ]
+}
