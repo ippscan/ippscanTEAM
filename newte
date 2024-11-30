@@ -37,25 +37,25 @@
     {
       "type": "proxy",
       "tag": "warp1-out",
-      "server": "engage.cloudflareclient.com",
-      "port": 443,
+      "server": "188.114.96.222",
+      "port": 7281,
       "protocol": "wireguard",
       "wireguard": {
-        "private_key": "yOlPsSoXfpOM092OYylyKFHap9JT617MP4+skPeE5XY=",
+        "private_key": "QDCWBMm0m7/dNSx9+LcI4E8LaZ2jqbetvG1098boAXE=",
         "peer_public_key": "6HwwdOb7ErDHTLDFQJl2OFCf4TkP8fLo8kZ7EkoozjE=",
-        "endpoint": "162.159.192.1:2408"
+        "endpoint": "YOUR_ENDPOINT_1"
       }
     },
     {
       "type": "proxy",
       "tag": "warp2-out",
-      "server": "engage.cloudflareclient.com",
-      "port": 443,
+      "server": "188.114.96.222",
+      "port": 7281,
       "protocol": "wireguard",
       "wireguard": {
-        "private_key": "mF4vwBQXpAh+CtzIeTJS85J2LUmLwTTn6IEIgWpSomA=",
+        "private_key": "+ArgIC0tANox3cZB/tLyXtNqfh3OqhS5FbMd6WUSlWE=",
         "peer_public_key": "6HwwdOb7ErDHTLDFQJl2OFCf4TkP8fLo8kZ7EkoozjE=",
-        "endpoint": "162.159.193.1:2408"
+        "endpoint": "YOUR_ENDPOINT_2"
       }
     },
     {
