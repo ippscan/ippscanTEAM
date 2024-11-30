@@ -32,7 +32,7 @@
         "address": "rcode://success"
       }
     ],
-    "rules": 1  [
+    "rules": [
       {
         "domain": "dnslow.me",
         "server": "dns-direct"
@@ -107,6 +107,6 @@
         "🇩🇪 WARP - Germany"
       ],
       "default": "auto"
-    },
-    {
-      "type
+    }
+  ]
+}
