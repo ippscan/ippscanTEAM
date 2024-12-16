@@ -51,16 +51,16 @@
     "final": "dns-remote",
     "static_ips": {
       "sky.rethinkdns.com": [
-        "172.67.204.84",
-        "104.21.69.44",
-        "2606:4700:3032::6815:452c",
-        "2606:4700:3031::ac43:cc54",
-        "104.18.203.232",
-        "104.18.202.232",
-        "172.64.172.4",
-        "172.64.173.4",
-        "2606:4700:e4::ac40:ad04",
-        "2606:4700:e4::ac40:ac04"
+        "172.67.220.150",
+        "104.21.73.44",
+        "2606:4700:3032::6815:492c",
+        "2606:4700:3031::ac43:dc54",
+        "104.18.204.240",
+        "104.18.202.242",
+        "172.64.182.14",
+        "172.64.183.14",
+        "2606:4700:e5::ac40:bd14",
+        "2606:4700:e5::ac40:bc14"
       ]
     },
     "independent_cache": true
@@ -103,8 +103,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇷 WARP - Iran",
-        "🇩🇪 WARP - Germany"
+        "\ud83c\uddee\ud83c\uddf7 WARP - Iran",
+        "\ud83c\udde9\ud83c\uddea WARP - Germany"
       ],
       "default": "auto"
     },
@@ -112,22 +112,22 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇷 WARP - Iran",
-        "🇩🇪 WARP - Germany"
+        "\ud83c\uddee\ud83c\uddf7 WARP - Iran",
+        "\ud83c\udde9\ud83c\uddea WARP - Germany"
       ],
       "url": "http://cp.cloudflare.com/",
       "interval": "10m0s"
     },
     {
       "type": "wireguard",
-      "tag": "🇮🇷 WARP - Iran",
+      "tag": "\ud83c\uddee\ud83c\uddf7 WARP - Iran",
       "local_address": [
         "172.16.0.2/32",
         "2606:4700:110:8c91:4063:21d0:7dd5:f218/128"
       ],
       "private_key": "AJ0si9MKGCtoC/NHwKc8G0MADbTPl/1M7KNWvM24W1g=",
-      "server": "162.159.195.161",
-      "server_port": 1002,
+      "server": "162.159.192.162",
+      "server_port": 878,
       "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
       "reserved": "AAAA",
       "mtu": 1280,
@@ -137,15 +137,15 @@
     },
     {
       "type": "wireguard",
-      "tag": "🇩🇪 WARP - Germany",
-      "detour": "🇮🇷 WARP - Iran",
+      "tag": "\ud83c\udde9\ud83c\uddea WARP - Germany",
+      "detour": "\ud83c\uddee\ud83c\uddf7 WARP - Iran",
       "local_address": [
         "172.16.0.2/32",
         "2606:4700:110:8c15:3f90:ad2d:8810:77f3/128"
       ],
       "private_key": "iKXZlb1y3GtpI6shoSD3OMaC3RWmvO1kebNJRHeOm14=",
-      "server": "162.159.195.161",
-      "server_port": 1002,
+      "server": "162.159.192.162",
+      "server_port": 878,
       "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
       "reserved": "AAAA",
       "mtu": 1280,
@@ -154,7 +154,7 @@
       "fake_packets_delay": "20-250"
     },
     {
-"type": "dns",
+      "type": "dns",
       "tag": "dns-out"
     },
     {
